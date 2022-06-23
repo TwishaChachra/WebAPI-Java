@@ -36,14 +36,14 @@ public class StudentTableViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        avgGradeColumn.setCellValueFactory(new PropertyValueFactory<>("Age"));
-        firstNameColumn.setCellValueFactory(new PropertyValueFactory<>("Directors"));
-        genderColumn.setCellValueFactory(new PropertyValueFactory<>("Genres"));
-        lastNameColumn.setCellValueFactory(new PropertyValueFactory<>("Id"));
-        majorCodeColumn.setCellValueFactory(new PropertyValueFactory<>("Title"));
-        provinceColumn.setCellValueFactory(new PropertyValueFactory<>("Year"));
-        studentIdColumn.setCellValueFactory(new PropertyValueFactory<>("Year"));
-        telephoneController.setCellValueFactory(new PropertyValueFactory<>("Year"));
+        avgGradeColumn.setCellValueFactory(new PropertyValueFactory<>("AverageGrade"));
+        firstNameColumn.setCellValueFactory(new PropertyValueFactory<>("FirstName"));
+        genderColumn.setCellValueFactory(new PropertyValueFactory<>("Gender"));
+        lastNameColumn.setCellValueFactory(new PropertyValueFactory<>("LastName"));
+        majorCodeColumn.setCellValueFactory(new PropertyValueFactory<>("MajorCode"));
+        provinceColumn.setCellValueFactory(new PropertyValueFactory<>("Province"));
+        studentIdColumn.setCellValueFactory(new PropertyValueFactory<>("StudentId"));
+        telephoneController.setCellValueFactory(new PropertyValueFactory<>("Telephone"));
 
     }
 }
