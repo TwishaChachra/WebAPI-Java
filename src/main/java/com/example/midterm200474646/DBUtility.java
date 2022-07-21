@@ -8,7 +8,7 @@ public class DBUtility {
     private static String password = DBCredentials.password;
     private static String connectURL = "jdbc:mysql://172.31.22.43:3306/Twisha200474646";
 
-    public static ArrayList<Student> geStudentFromDB(){
+    public static ArrayList<Student> getStudentFromDB(){
         ArrayList<Student> students = new ArrayList<>();
 
         String sql = "SELECT*FROM students";
@@ -34,6 +34,8 @@ public class DBUtility {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        }catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
         return students;

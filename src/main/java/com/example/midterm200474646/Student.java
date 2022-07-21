@@ -66,7 +66,13 @@ private String majorCode;
     }
 
     public void setGender(String gender) {
-        this.gender = gender;
+
+        if(gender.equals("male") || gender.equals("female") || gender.equals("other")) {
+            this.gender = gender;
+        }
+        else {
+            System.out.println("Gender needs to be selected between male, female, other ");
+        }
     }
 
     public int getTelephone() {
